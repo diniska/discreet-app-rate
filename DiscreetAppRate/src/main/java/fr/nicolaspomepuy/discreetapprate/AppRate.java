@@ -337,7 +337,6 @@ public class AppRate {
      * @return true when the view should be shown and false otherwise
      */
     public boolean check() {
-
         if (!Utils.isGooglePlayInstalled(activity)) {
             if (debug) LogD("Play Store is not installed. Won't do anything");
             return false;
@@ -419,7 +418,7 @@ public class AppRate {
      * Check and show if showing the view is needed
      */
     @SuppressLint("NewApi")
-	public void checkAndShow() {
+    public void checkAndShow() {
         if (check()) {
             showAppRate();
         }
